@@ -1,0 +1,6 @@
+- hosts: win
+  tasks:
+    - name: Install IIS role
+      win_feature:
+        name: Web-Server
+        state: present
